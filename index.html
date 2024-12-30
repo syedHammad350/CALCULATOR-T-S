@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <input id="inp" class="inpu" readonly type="text" placeholder="0">
+            
+            <div class="btn">
+                <button onclick="clearall()" style="color: blue;">AC</button>
+                <button onclick="del()" style="color: blue; font-size: 25px;" >DEL</button>
+                <button onclick="sum('%')" style="color: blue;">%</button>
+                <button onclick="sum('/')" style="color: blue;">/</button>
+            </div>
+            <div class="btn">
+                <button onclick="sum('7')">7</button>
+                <button onclick="sum('8')">8</button>
+                <button onclick="sum('9')">9</button>
+                <button onclick="sum('*')" style="color: green;">X</button>
+            </div>
+            <div class="btn">
+                <button onclick="sum('4')">4</button>
+                <button onclick="sum('5')">5</button>
+                <button onclick="sum('6')">6</button>
+                <button onclick="sum('-')" style="color: green;">-</button>
+            </div>
+            <div class="btn">
+                <button onclick="sum('1')">1</button>
+                <button onclick="sum('2')">2</button>
+                <button onclick="sum('3')">3</button>
+                <button onclick="sum('+')" style="color: green;">+</button>
+            </div>
+            <div class="btn">
+                <button onclick="sum('0')">0</button>
+                <button onclick="sum('.')" style="color: green;">.</button>
+                <button onclick="answer()" style="color: green;">=</button>
+                <button id="btn" onclick="off()" style="color: red;font-size: 25px;">OFF</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
